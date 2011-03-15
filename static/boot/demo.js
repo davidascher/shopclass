@@ -133,6 +133,7 @@ exports.launch = function(env) {
         var h = Math.round(((document.documentElement.clientHeight/2) - 20));
         var top_spacer = 28 + "px";
         var other_spacer = h - 20 + "px";
+        var header_spacer = "30px";
         var nodearea = document.getElementById('nodearea');
         nodearea.style.width = w + "px";
         nodearea.style.height = other_spacer;
@@ -167,7 +168,7 @@ exports.launch = function(env) {
         jsarea.parentNode.style.width = h + "px";
         jsarea.parentNode.style.height = h + "px";
         jsarea.parentNode.style.left = w + "px";
-        jsarea.parentNode.style.top = h + "px";
+        jsarea.parentNode.style.top = h +  "px";
 
         env.nodeeditor.resize();
         env.htmleditor.resize();

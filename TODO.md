@@ -7,6 +7,8 @@ UI:
   - figure out what to do about syntax errors in JS
   - make layout less JS-driven, more CSS
   - decide about autosave?
+  - build in colorpicker
+  - autocomplete for CSS?
 
 default code:
   - include 'fork' & 'view source' or equiv.

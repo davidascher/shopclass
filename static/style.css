@@ -204,7 +204,7 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
-#header {
+#bar {
   display: block;
   padding: 0.5em;
   height: 30px;
@@ -219,7 +219,9 @@ html[xmlns] .clearfix {
 }
 
 #editors {
-  position: relative;
+  position: fixed;
+  top: 30px;
+  left: 0;
 }
 
 #toplevel {

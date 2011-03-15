@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The thing.</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+    <script src="/static/boot/require.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/jquery-1.4.2.js"></script>
+  </head>
+<body>
+  <div id="toplevel">
+    <button id="saveall">save all</button>
+    <div id="editors">
+      <div class="quadrant">
+        <div class="header">
+          <span id="domain">hackit.us</span>
+          <span id="chevron">/</span>
+          <span id="username"></span>
+          <span id="chevron">/</span>
+            <select>
+              <option value="project" id="projectnamevalue"></option>
+              <option value="new">new...</option>
+            </select>
+          </span>
+          <span id="projectname"></span>
+          <span id="method">Method:
+            <select>
+              <option value="GET">GET</option>
+              <option value="POST">POST</option>
+              <option value="PUT">PUT</option>
+            </select>
+          </span>
+        </div>
+        <div id="nodearea" class="top left area">
+          <div id="nodeeditor" class="editor"></div>
+        </div>
+      </div>
+      <div class="quadrant">
+        <div class="header">
+          <span>HTML code</span>
+        </div>
+        <div id="htmlarea" class="top right area">
+          <div id="htmleditor" class="editor"></div>
+        </div>
+      </div>
+      <div class="quadrant">
+        <div class="header">
+          <span>CSS code</span>
+        </div>
+        <div id="cssarea" class="area">
+          <div id="csseditor" class="editor"></div>
+        </div>
+      </div>
+      <div class="quadrant">
+        <div class="header">
+          <span>JS code</span>
+        </div>
+        <div id="jsarea" class="area">
+          <div id="jseditor" class="editor"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/editor" id="nodetext">function foo(request, response) {
+  request.foo():
+}
+</script>
+<script type="text/editor" id="htmltext"><html><head>
+  <title>foo</title>
+</head>
+  <body>
+    <p>body!</p>
+  </body>
+</html></script>
+<script type="text/editor" id="jstext">onClick() {
+}</script>
+<script type="text/editor" id="csstext">.text-layer {
+font-family: Monaco, "Courier New", monospace;
+font-size: 12px;
+cursor: text;
+}</script>
+
+  <script src="/static/boot/boot.js" type="text/javascript"></script>
+
+</body>
+</html>

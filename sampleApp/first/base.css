@@ -1,0 +1,14 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 12px;
+  line-height: 21px;
+  color: #222;
+  overflow: hidden;
+  min-width: 320px;
+  padding: 1em;
+}
+
+p {
+    border: 1px solid red;
+    padding: 1em;
+}

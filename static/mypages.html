@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>My Pages</title>
+    <link href="static/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="static/vendor/json2.js"></script>
+    <script src="static/vendor/jquery-1.4.2.js"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <script src="static/vendor/js/jquery-ui-1.8.5.custom.min.js"></script>
+    <script src="static/vendor/underscore-1.1.0.js"></script>
+    <script src="static/mypages.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/vendor/jquery.autocomplete.css" /> 
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="account">
+        I know you as: <span id="username"/>
+      </div>
+      <a id="logout" href="/logout">logout</a>
+      <ul id="pages"/>
+    </div>
+    <!-- Templates -->
+
+    <script type="text/x-jquery-tmpl" id="page-template">
+        <li>${name} page: <a href="${username}/${name}/">view it</a>, or <a href="${username}/${name}/edit">EDIT it!</a>.</li>
+    </script>
+  </body>
+
+</html>
